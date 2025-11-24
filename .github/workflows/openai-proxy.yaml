@@ -13,7 +13,7 @@ env:
   CARGO_TERM_COLOR: always
 
 jobs:
-  meditimer-cronjob-image:
+  openai-proxy-image:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
