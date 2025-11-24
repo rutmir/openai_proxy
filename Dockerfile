@@ -11,7 +11,7 @@ RUN rustup target add x86_64-unknown-linux-musl
 WORKDIR /usr/src/app
 
 # Copy Cargo.toml and Cargo.lock first to leverage Docker caching for dependencies
-COPY Cargo.toml Cargo.lock ./
+COPY Cargo.toml ./
 
 # Build dummy to cache dependencies
 RUN mkdir src && echo "fn main() {}" > src/main.rs && cargo build --target x86_64-unknown-linux-musl --release
