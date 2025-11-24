@@ -12,7 +12,7 @@ Server must be incapsulated into the Docker, user provides to docker config.toml
 ## Docker image
 rutmir/openai-proxy
 
-docker -run --rm -d \
+docker -run -d \
   --name openai-proxy \
   -p 3000:3000 \
   -v <path_to_config_file>/config.toml:/app/config.toml \
