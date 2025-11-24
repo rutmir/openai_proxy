@@ -5,7 +5,7 @@ target/
 log/
 
 # Additional Rust patterns
-#Cargo.lock
+Cargo.lock
 **/target/
 *.rlib
 *.prof*
