@@ -10,4 +10,12 @@ Server must be incapsulated into the Docker, user provides to docker config.toml
 - **Axum** http server 
 
 ## Docker image
-rutmir/openai-proxy:latest
+rutmir/openai-proxy
+
+docker -run -d \
+  --name openai-proxy \
+  -p 3000:3000 \
+  -v <path_to_config_file>/config.toml:/app/config.toml \
+  -v <path_to_log_folder>:/app/log \
+  --restart always \
+  rutmir/open-proxy:latest \
