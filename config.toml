@@ -1,0 +1,7 @@
+version = "0.1.0"
+port = 8080
+host = "0.0.0.0"
+base_url = "https://api.openai.com/v1"
+api_keys = ["sk-test123", "sk-test231", "sk-test312"]
+access_keys = ["access-key-1", "access-key-2"]
+log_level = "Info"

@@ -1,0 +1,23 @@
+# Ignore all files by default
+*
+
+# Allow source code and configuration files
+!src/
+!src/**
+!Cargo.toml
+!Cargo.lock
+!config.test.toml
+
+# Allow documentation files
+!README.md
+!readme.md
+
+# Ignore git and other unnecessary files
+.git
+.gitignore
+README.md.*
+readme.md.*
+target/
+.DS_Store
+.vscode/
+.idea/
